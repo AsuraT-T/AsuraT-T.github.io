@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Drive the future — Coming Soon</title>
+    <meta name="description" content="Drive the future — coming soon." />
+
+    <style>
+      :root {
+        --bg-img: url("https://images.unsplash.com/photo-1665127771643-0bc02014da61?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1164");
+        --overlay: rgba(6, 10, 15, 0.56);
+        --accent: #00d1b2;
+        --text: #ffffff;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(var(--overlay), var(--overlay)),
+          var(--bg-img);
+        background-size: cover;
+        background-position: center;
+        color: var(--text);
+        text-align: center;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+
+      .card {
+        max-width: 900px;
+        width: 100%;
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.02)
+        );
+        border-radius: 12px;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+      }
+
+      h1 {
+        margin: 0 0 0.4rem 0;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        font-size: clamp(2rem, 6vw, 4rem);
+        line-height: 1;
+      }
+
+      p.lead {
+        margin: 0 0 1.1rem 0;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: clamp(1rem, 2.6vw, 1.25rem);
+      }
+
+      .note {
+        margin-top: 0.9rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* small footer attribution */
+      .attribution {
+        position: fixed;
+        right: 12px;
+        bottom: 10px;
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(4px);
+        padding: 0.25rem 0.5rem;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.18);
+      }
+
+      @media (max-width: 420px) {
+        .card {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero" role="main">
+      <section class="card" aria-labelledby="title">
+        <h1 id="title">Drive the future</h1>
+        <p class="lead">
+          We're building something electrifying. Launching soon.
+        </p>
+
+        <p class="note">Join our waitlist for early access and updates.</p>
+      </section>
+    </main>
+  </body>
+</html>
